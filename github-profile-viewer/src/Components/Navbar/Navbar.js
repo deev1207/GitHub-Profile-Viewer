@@ -7,14 +7,14 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 export default function NavBar() {
     return (
         <nav className='nav-container'>
-            <Link to={`/`} className='link'>
+            <Link to={`/GitHub-Profile-Viewer`} className='link'>
                 <span className='navText'>Home</span>
             </Link>
-           <Link to={`/profile`} className='link'>
+           <Link to={`/GitHub-Profile-Viewer/profile`} className='link'>
                 <FontAwesomeIcon icon={faUser} />
                 <span className='navText'>Profile</span>
             </Link>
-            <Link to={`/repos`} className='link'>
+            <Link to={`/GitHub-Profile-Viewer/repos`} className='link'>
 
                 <img src={icon} className='icon' alt="Icon" />
                 <span className='navText'>Repos</span>

@@ -1,6 +1,7 @@
 {
   "name": "github-profile-viewer",
   "version": "0.1.0",
+  "homepage": "https://deev1207.github.io/GitHub-Profile-Viewer/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",

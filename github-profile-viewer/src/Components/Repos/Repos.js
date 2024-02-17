@@ -28,7 +28,7 @@ export default function Repos({username}){
   
   
       const getRepoLength =async()=>{
-        const octokit = new Octokit({ auth: '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' });
+        const octokit = new Octokit({ auth: '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' });
         const response = await octokit.request("GET /users/{username}/repos", {
           username: username,
           headers: {
@@ -41,7 +41,7 @@ export default function Repos({username}){
   
       }
       const fetchRepos = async()=>{
-        const octokit = new Octokit({ auth: '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' });
+        const octokit = new Octokit({ auth: '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' });
         const response = await octokit.request("GET /users/{username}/repos", {
           username: username,
           per_page: perPage,

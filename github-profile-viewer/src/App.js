@@ -20,9 +20,9 @@ function App() {
         <NavBar />
         <Routes>
           {/* <Route path="/" element={<Search onSubmit={onSubmit} />}  /> */}
-          <Route path="/repos" element={<Repos username={username}/>}  />
-          <Route path="/profile" element={<Profile  setRedirectPath={setRedirectPath} username={username}/>}  />
-          <Route path="/" element={redirectPath ? <Navigate to="/profile" /> : <Search onSubmit={onSubmit} />} />
+          <Route path="/GitHub-Profile-Viewer/repos" element={<Repos username={username}/>}  />
+          <Route path="/GitHub-Profile-Viewer/profile" element={<Profile  setRedirectPath={setRedirectPath} username={username}/>}  />
+          <Route path="/GitHub-Profile-Viewer/" element={redirectPath ? <Navigate to="/GitHub-Profile-Viewer/profile" /> : <Search onSubmit={onSubmit} />} />
  
         </Routes>
     </>
