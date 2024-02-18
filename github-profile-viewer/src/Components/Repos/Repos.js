@@ -12,7 +12,7 @@ export default function Repos({username}){
     const repoCount = useRef(0)
     const visitedPages = useRef([])
     const perPage = 10; // Number of items per page
- 
+    console.log(process.env.REACT_APP_AUTH_TOKEN);
     let res = null
     console.log(visitedPages, 'visited');
     console.log('repos');
@@ -28,7 +28,7 @@ export default function Repos({username}){
   
   
       const getRepoLength =async()=>{
-        const octokit = new Octokit({ auth: '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' });
+        const octokit = new Octokit({ auth: process.env.REACT_APP_AUTH_TOKEN });
         const response = await octokit.request("GET /users/{username}/repos", {
           username: username,
           headers: {
@@ -41,7 +41,7 @@ export default function Repos({username}){
   
       }
       const fetchRepos = async()=>{
-        const octokit = new Octokit({ auth: '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' });
+        const octokit = new Octokit({ auth: process.env.REACT_APP_AUTH_TOKEN });
         const response = await octokit.request("GET /users/{username}/repos", {
           username: username,
           per_page: perPage,

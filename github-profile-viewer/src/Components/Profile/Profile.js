@@ -12,7 +12,7 @@ export default function Profile({setRedirectPath,username}) {
 
     const fetchProfile = async () => {
         const octokit = new Octokit({
-            auth: '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'
+            auth: process.env.REACT_APP_AUTH_TOKEN
         })
 
         const response = await octokit.request('GET /users/{username}', {
