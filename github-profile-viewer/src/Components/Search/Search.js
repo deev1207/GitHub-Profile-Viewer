@@ -1,4 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import './Search.css'
 export default function Search({ onSubmit }){
     const [query, setQuery] = useState('');
@@ -10,7 +12,8 @@ export default function Search({ onSubmit }){
 
       
 
-          <div className='search'>
+          <div className='searchContainer'>
+            <div className='search'>
             <input
             className='input'
               type="text"
@@ -18,7 +21,11 @@ export default function Search({ onSubmit }){
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search..."
             />
-            <button onClick={handleSubmit} >Search</button>
+            
+           
+            <button className="iconButton" onClick={handleSubmit} > <FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+            </div>
+            
           </div>
 
     )

@@ -1,14 +1,34 @@
-.search{
+.searchContainer{
     display: flex;
     margin:10px;
     justify-content: center;
+    align-items: center;
+
+}
+.search{
+    background-color: black;
+    border-radius: 10px;
 }
 
 .input{
-    margin:10px;
+    margin:0px;
+    border: none;
+    background-color: black;
+    padding: 10px;
     border-radius: 5px;
-    
+    outline: none;
+    color: white;
 }
+    
+.iconButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 35px;
+  }
 
 
 

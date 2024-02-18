@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import icon from './icons8-repo-32.png';
+import icon from '../../assets/icons8-repo-32.png';
 import './Navbar.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';

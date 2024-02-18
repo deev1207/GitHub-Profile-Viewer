@@ -8,9 +8,11 @@ export default function Profile({setRedirectPath,username}) {
 
     useEffect(() => {
         fetchProfile()
+        console.log( '12');
     }, [])
 
     const fetchProfile = async () => {
+        console.log( process.env.REACT_APP_AUTH_TOKEN);
         const octokit = new Octokit({
             auth: process.env.REACT_APP_AUTH_TOKEN
         })
@@ -22,7 +24,7 @@ export default function Profile({setRedirectPath,username}) {
             }
         })
         console.log(response);
-        console.log('test');
+        console.log('test 1');
         setProfile(response.data)
     }
     return (
