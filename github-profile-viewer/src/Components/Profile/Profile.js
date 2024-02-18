@@ -22,6 +22,7 @@ export default function Profile({setRedirectPath,username}) {
             }
         })
         console.log(response);
+        console.log('test');
         setProfile(response.data)
     }
     return (
